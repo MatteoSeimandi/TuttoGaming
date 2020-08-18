@@ -61,12 +61,35 @@ h2{
 
 #main{
 	width: 70%;
-	height: 500px;
+	height: 2300px;
 	border: 1px solid black;
 	background-color: rgb(165, 142, 142);
 	margin-left: 15%;
 }
 
+#main img:first-child{
+	width: 100%;
+	height: 23%;
+}
+
+.message{
+	width: 70%;
+	height: 14%;
+	text-align: center;
+	margin-left: 13%;
+}
+
+.welcome{
+	float: right;
+	max-width: 50%;
+	font-weight: bold;
+	margin-right: 10%;
+}
+
+hr{
+	border: 2px solid black;
+	margin-bottom: 3%;
+}
 
 /* Footer */
 footer{
