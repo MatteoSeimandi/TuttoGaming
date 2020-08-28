@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/master.css" type="text/css">
 	<script src="js/master.js"></script>
-	<title></title>
+	<title>Hardware 1</title>
 </head>
 <body>
 	<header>
@@ -13,28 +13,65 @@
 				<h2>TUTTOGAMING</h2>
 			</div>
 			<div class="logo">
-				<a href="../primo/Index.html">
-					<img src="../img/logo.png">
-				</a>
+					<a href="../home/Index.html">
+						<img src="../img/logo.png">
+					</a>
 			</div>
 			<div id="links">
-				<a class="a" href="../secondo/Index.html">Istruzioni</a>
-				<a class="a" href="../terzo/Index.html">Chi siamo</a>
-				<a class="a" href="../quarto/Index.html">La nostra Storia</a>
-				<a class="a" href="../quinto/Index.html">Hardware 1</a>
-				<a class="a" href="../sesto/Index.html">Hardware 2</a>
-				<a class="a" href="../settimo/Index.html">Periferiche</a>
-				<a class="a" href="../ottavo/Index.html">Carrello</a>
-				<a class="a" href="../nono/Index.html">Contattami</a>
+				<a class="a" href="../Istruzioni/Index.html">Istruzioni</a>
+				<a class="a" href="../Chi_Siamo/Index.html">Chi siamo</a>
+				<a class="a" href="../Storia/Index.html">La nostra Storia</a>
+				<a class="a" href="../Hardware1/Index.html">Hardware 1</a>
+				<a class="a" href="../Hardware2/Index.html">Hardware 2</a>
+				<a class="a" href="../Periferiche/Index.html">Periferiche</a>
+				<a class="a" href="../Carrello/Index.html">Carrello</a>
+				<a class="a" href="../Form/Index.html">Contattami</a>
 			</div>
 			<div class="logo">
-				<a href="../decimo/Index.html">
-					<img src="../img/default.png">
+				<a href="../Login/Index.html">
+					<img src="../img/default.png" id="profilo">
 				</a>
 			</div>
 		</nav>
 	</header>
 	<div id="main">
+		<h1>L'HARDWARE PRIMARIO</h1>
+		<div>
+			<p id="ciao">
+				Benvenuto nella sezione acquisti! Qui troverai i migliori articoli
+				su componentistica informatica con prezzi competitivi e fatti apposta per il gaming.
+				Seleziona i prodotti che desideri acquistare con il pulsante "Salva" e
+				clicca l'immagine del prodotto per conoscerne noe e prezzo.
+			</p>
+		</div>
+		<div>
+			<div id="primo">
+				<h3>LA CPU</h3>
+				<p>
+					Una unità centrale di elaborazione (in inglese central processing unit, sigla CPU),
+					indica l'unità o sottosistema logico e fisico, attualmente implementata attraverso un microprocessore digitale
+					che sovraintende alle funzionalità logiche di elaborazione principali del computer, contrapponendosi a
+					tutte le altre unità di elaborazione secondarie presenti nelle architetture hardware dei computer
+					ovvero le varie schede elettroniche.
+					Ha dunque il compito di eseguire le istruzioni di un programma presente nella ROM , nella memoria centrale (o primaria, es. RAM)
+					dopo averlo prelevato dalla memoria secondaria (o di massa) o da altri dispositivi:
+					durante l'esecuzione del programma l'unità legge o scrive dati direttamente da o nella memoria centrale.
+				</p>
+			</div>
+			<div id="secondo">
+				<img src="img/cpu1.jpeg" data-nome="Intel Core i5 9400f 2.90 GHz" data-prezzo="136" onclick="info()">
+				<div>
+					<input type="button" value="Prima" onclick="back()">
+					<input type="button" value="Salva" onclick="save()">
+					<input type="button" value="Dopo" onclick="next()">
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div>
+
+
+		</div>
 
 
 
@@ -47,8 +84,9 @@
 			2020 | NO COPYRIGHT | with Github Pages
 		</p>
 		<p>
-			f | G+ | YT
+			f	 | G+ | YT
 		</p>
 	</footer>
 </body>
+<script src="js/carica.js"></script>
 </html>
