@@ -62,6 +62,7 @@ function end(event) {
    var contenitore = document.querySelector("#deposito");
    contenitore.innerHTML = "";
    var data = event.dataTransfer.getData("text/plain", this.id);
-   contenitore .src = data; 
-   localStorage.setItem("img", data);
+   contenitore .src = data;
+	localStorage.setItem("img", data);
+	alert("Immagine salvata");
 }
