@@ -48,8 +48,9 @@ function cattura () {
 
 }
 
-function start(event) { // funzioni per il drag & drop
-   event.dataTransfer.setData("text", event.target.id);
+function start(e) { // funzioni per il drag & drop
+    e.originalEvent.dataTransfer.effectAllowed = "move";
+    e.originalEvent.dataTransfer.setData("text/plain", this.id);
 }
 
 function stop(event) {
@@ -60,12 +61,7 @@ function end(event) {
    event.preventDefault();
    var contenitore = document.querySelector("#deposito");
    contenitore.innerHTML = "";
-   var data = event.dataTransfer.getData("text");
-   var ogg = document.querySelector("#data").src;
-   var nuovo = document.createElement("img");
-   nuovo.src = ogg;
-   nuovo.id = "avatar";
-	contenitore.appendChild(nuovo);
-
-	localStorage.setItem("img", nuovo.src);
+   var data = event.dataTransfer.getData("text/plain", this.id);
+   contenitore .src = data; 
+   localStorage.setItem("img", data);
 }
