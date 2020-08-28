@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="it" >
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/master.css" type="text/css">
+	<script src="js/master.js"></script>
+	<title>Contattami</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<div id="title">
+				<h2>TUTTOGAMING</h2>
+			</div>
+			<div class="logo">
+				<a href="../home/Index.html">
+					<img src="../img/logo.png">
+				</a>
+			</div>
+			<div id="links">
+				<a class="a" href="../Istruzioni/Index.html">Istruzioni</a>
+				<a class="a" href="../Chi_Siamo/Index.html">Chi siamo</a>
+				<a class="a" href="../Storia/Index.html">La nostra Storia</a>
+				<a class="a" href="../Hardware1/Index.html">Hardware 1</a>
+				<a class="a" href="../Hardware2/Index.html">Hardware 2</a>
+				<a class="a" href="../Periferiche/Index.html">Periferiche</a>
+				<a class="a" href="../Carrello/Index.html">Carrello</a>
+				<a class="a" href="../Form/Index.html">Contattami</a>
+			</div>
+			<div class="logo">
+				<a href="../Login/Index.html">
+					<img src="../img/default.png">
+				</a>
+			</div>
+		</nav>
+	</header>
+	<div id="main">
+		<div id="hello">
+			<p>
+				Benvenuto nella zona login. Qui potrai accedere al sito compilando i campi qui sotto.
+				Nel nostro server appariranno le tue credenziali e la tua foto profilo verrà caricata nella barra di navigazione.
+			</p>
+		</div>
+		<div id="login">
+			<h1>LOGIN</h1>
+			<div id="image">
+				<div>
+					<img src="img/default.png" draggable="true" ondragstart="start(event)"  style="border: 1px solid black;">
+				</div>
+				<input type="button" value="Prima" onclick="back()">
+				<input type="button" value="Dopo" onclick="next()">
+			</div>
+			<div style="display: inline-block;width: 40%;margin-left: 7%;text-align: center; height: 250px;">
+				<div id="deposito" ondragover="stop(event)" ondrop="end(event)" style="border: 1px solid black; height: 90%; width: 90%;">
+
+				</div>
+				<input type="button" value="Salva">
+			</div>
+			<hr>
+			<form style="height: 150px;">
+				<div class="forms" style="margin-left: 2%; border-right: 1px solid black;">
+					<input type="text" placeholder="nome">
+					<input type="text" placeholder="cognome">
+				</div>
+				<div class="forms">
+					<input type="submit" class="invia" onclick="cattura()">
+					<input type="reset" class="invia">
+				</div>
+			</form>
+		</div>
+	</div>
+	<footer>
+		<p>
+			Powered by Seima
+		</p>
+		<p>
+			2020 | NO COPYRIGHT | with Github Pages
+		</p>
+		<p>
+			f | G+ | YT
+		</p>
+	</footer>
+</body>
+</html>
