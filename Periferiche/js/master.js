@@ -1,57 +1,56 @@
 var cpu = [
-	"img/cpu1.jpeg",
-	"img/cpu2.jpeg",
-	"img/cpu3.jpeg"
+	"img/monitor1.jpg",
+	"img/monitor2.jpg",
+	"img/monitor3.jpg"
 ]
 
 var cpu2 = [
-	"Intel Core i5 9400f 2.90 GHz",
-	"Intel Core i7 9700k 3,6 GHz",
-	"AMD Ryzen 7 3700X"
+	"MSI Optix MAG241CV LCD Monitor Gaming 24",
+	"Samsung U28E570D Monitor 28 Pollici, UltraHD",
+	"ASUS VG278QR 27 FHD Esports Gaming"
 ]
 
 var cpu3 = [
-	"136",
-	"318",
-	"298"
+	"239",
+	"229",
+	"289"
 ]
 
 var mobo = [
-	"img/mobo1.jpeg",
-	"img/mobo2.jpeg",
-	"img/mobo3.jpg"
+	"img/tem1.jpg",
+	"img/tem2.jpg",
+	"img/tem3.jpg"
 ]
 
 var mobo2 = [
-	"Asus ROG Strix Z490-E Gaming",
-	"MSI MPG Z390 Gaming plus",
-	"Gigabyte Z390 M Gaming Scheda Madre"
+	"Trust Gaming GXT 835 Azor Tastiera Illuminata",
+	"HAVIT Tastiera e Mouse da Gioco Filo Gaming Tastiera",
+	"VersionTECH Mouse da Gaming con Cavo"
 ]
 
 var mobo3 = [
-	"304",
-	"121",
-	"108"
+	"18",
+	"32",
+	"13"
 ]
 
 var video = [
-	"img/video1.jpeg",
-	"img/video2.jpeg",
-	"img/video3.jpeg",
+	"img/cuffie1.jpg",
+	"img/cuffie2.jpg",
+	"img/cuffie3.jpg",
 ]
 
 var video2 = [
-	"MSI GeForce GTX 1650",
-	"GIGABYTE GeForce GTX 1650 GAMING ",
-	"ASUS Cerberus GeForce GTX 1050"
+	"Beexcellent GM-1, Cuffie da gaming con microfono",
+	"Cuffie da Gaming con Cancellazione del Rumore",
+	"YINSAN TM7, Cuffie Gaming con microfono"
 ]
 
 var video3 = [
-	"199",
-	"189",
-	"149"
+	"21",
+	"25",
+	"19"
 ]
-
 
 var i=0, j=0, k=0;
 
@@ -91,8 +90,9 @@ function save() {
 	var prodotto =	document.querySelector(".secondo img[name=cpu]");
 	var nome = prodotto.dataset.nome;
 	var prezzo = prodotto.dataset.prezzo;
-	localStorage.setItem("nomeCpu", nome);
-	localStorage.setItem("prezzoCpu", prezzo);
+	localStorage.setItem("nomeMonitor", nome);
+	localStorage.setItem("prezzoMonitor", prezzo);
+	alert("Articolo salvato");
 }
 
 // mobo
@@ -131,8 +131,9 @@ function save2() {
 	var prodotto =	document.querySelector(".secondo img[name=mobo]");
 	var nome = prodotto.dataset.nome;
 	var prezzo = prodotto.dataset.prezzo;
-	localStorage.setItem("nomeMobo", nome);
-	localStorage.setItem("prezzoMobo", prezzo);
+	localStorage.setItem("nomeTem", nome);
+	localStorage.setItem("prezzoTem", prezzo);
+	alert("Articolo Salvato");
 }
 
 // video
@@ -171,6 +172,7 @@ function save3() {
 	var prodotto =	document.querySelector(".secondo img[name=video]");
 	var nome = prodotto.dataset.nome;
 	var prezzo = prodotto.dataset.prezzo;
-	localStorage.setItem("nomeVideo", nome);
-	localStorage.setItem("prezzoVideo", prezzo);
+	localStorage.setItem("nomeCuffie", nome);
+	localStorage.setItem("prezzoCuffie", prezzo);
+	alert("Articolo salvato");
 }
