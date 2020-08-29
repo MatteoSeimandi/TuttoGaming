@@ -1,61 +1,61 @@
 var cpu = [
-	"img/cpu1.jpeg",
-	"img/cpu2.jpeg",
-	"img/cpu3.jpeg"
+	"img/ram1.jpg",
+	"img/ram2.jpg",
+	"img/ram3.jpg"
 ]
 
 var cpu2 = [
-	"Intel Core i5 9400f 2.90 GHz",
-	"Intel Core i7 9700k 3,6 GHz",
-	"AMD Ryzen 7 3700X"
+	"HyperX FURY HX424C15FB2/8 DDR4 8 GB, 2400 MHz",
+	"Crucial Ballistix LT BLS8G4D240FSE  2400 MHz, DDR4 DRAM 8 GB",
+	"Corsair Vengeance 8 GB (2x4 GB), DDR3, 1600 MHz"
 ]
 
 var cpu3 = [
-	"136",
-	"318",
-	"298"
+	"65",
+	"129",
+	"64"
 ]
 
 var mobo = [
-	"img/mobo1.jpeg",
-	"img/mobo2.jpeg",
-	"img/mobo3.jpg"
+	"img/ssd1.jpg",
+	"img/ssd2.jpg",
+	"img/ssd3.jpg"
 ]
 
 var mobo2 = [
-	"Asus ROG Strix Z490-E Gaming",
-	"MSI MPG Z390 Gaming plus",
-	"Gigabyte Z390 M Gaming Scheda Madre"
+	"Crucial P1 1 TB SSD Interno Fino a 2000 MB/s, 3D NAND",
+	"Kingston SSD Unità a Stato Solido Interne 2.5 240 GB",
+	"Samsung Memorie QVO SSD Interno da 1 TB, SATA, 2.5"
 ]
 
 var mobo3 = [
-	"304",
-	"121",
-	"108"
+	"101",
+	"32",
+	"102"
 ]
 
 var video = [
-	"img/video1.jpeg",
-	"img/video2.jpeg",
-	"img/video3.jpeg",
+	"img/case1.jpg",
+	"img/case2.jpg",
+	"img/case3.jpg",
 ]
 
 var video2 = [
-	"MSI GeForce GTX 1650",
-	"GIGABYTE GeForce GTX 1650 GAMING ",
-	"ASUS Cerberus GeForce GTX 1050"
+	"MSI MAG VAMPIRIC 010 Case ATX",
+	"Corsair Carbide Series SPEC-DELTA",
+	"Mars Gaming MCK, ATX PC Case,"
 ]
 
 var video3 = [
-	"199",
-	"189",
-	"149"
+	"69",
+	"70",
+	"39"
 ]
 
 
 var i=0, j=0, k=0;
 
-// cpu
+// ram
 
 function next () {
 	if (i < 2 )
@@ -91,11 +91,11 @@ function save() {
 	var prodotto =	document.querySelector(".secondo img[name=cpu]");
 	var nome = prodotto.dataset.nome;
 	var prezzo = prodotto.dataset.prezzo;
-	localStorage.setItem("nomeCpu", nome);
-	localStorage.setItem("prezzoCpu", prezzo);
+	localStorage.setItem("nomeRam", nome);
+	localStorage.setItem("prezzoRam", prezzo);
 }
 
-// mobo
+// ssd
 
 function next2 () {
 	if (j < 2 )
@@ -131,11 +131,11 @@ function save2() {
 	var prodotto =	document.querySelector(".secondo img[name=mobo]");
 	var nome = prodotto.dataset.nome;
 	var prezzo = prodotto.dataset.prezzo;
-	localStorage.setItem("nomeMobo", nome);
-	localStorage.setItem("prezzoMobo", prezzo);
+	localStorage.setItem("nomeSSD", nome);
+	localStorage.setItem("prezzoSSD", prezzo);
 }
 
-// video
+// case
 
 function next3 () {
 	if (k < 2 )
@@ -171,6 +171,6 @@ function save3() {
 	var prodotto =	document.querySelector(".secondo img[name=video]");
 	var nome = prodotto.dataset.nome;
 	var prezzo = prodotto.dataset.prezzo;
-	localStorage.setItem("nomeVideo", nome);
-	localStorage.setItem("prezzoVideo", prezzo);
+	localStorage.setItem("nomeCase", nome);
+	localStorage.setItem("prezzoCase", prezzo);
 }
