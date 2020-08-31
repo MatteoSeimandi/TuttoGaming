@@ -61,7 +61,7 @@ h2:first-child{
 
 #main{
 	width: 67%;
-	height: 800px;
+	height: 650px;
 	border: 1px solid black;
 	background-color: rgb(165, 142, 142);
 	margin-left: 15%;
@@ -73,26 +73,54 @@ h2:first-child{
 }
 
 #hello{
-	border: 1px solid black;
+	border: 3px solid darkred;
+	border-radius: 5px;
+	text-align: center;
+	margin-bottom: 3%;
+}
 
+h1{
+	text-align: center;
+}
+
+h3{
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+p:last-child{
+	margin: 0px;
 }
 
 #conto{
-	border: 1px solid black;
+	border-left: 3px solid darkred;
+	border-right: 3px solid darkred;
 	width: 60%;
 	margin-left: 17%;
-	height: 600px;
+	height: 400px;
+	padding: 3%;
 }
 
 #articoli{
-	border: 1px solid black;
+	font-size: 120%;
+}
+
+hr{
+	border: 2px solid darkred;
 
 }
 
-#bottoni{
-	border: 1px solid black;
-
+input{
+	color: black;
+	text-align: center;
+	border: 2px solid darkred;
+	background-color: crimson;
+	height: 30px;
+	width: 15%;
+	font-size: 17px;
+	margin: 2%;
 }
+
 
 /* Footer */
 
