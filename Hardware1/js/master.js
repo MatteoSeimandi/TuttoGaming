@@ -93,6 +93,7 @@ function save() {
 	var prezzo = prodotto.dataset.prezzo;
 	localStorage.setItem("nomeCpu", nome);
 	localStorage.setItem("prezzoCpu", prezzo);
+	alert("Articolo salvato");
 }
 
 // mobo
@@ -133,6 +134,7 @@ function save2() {
 	var prezzo = prodotto.dataset.prezzo;
 	localStorage.setItem("nomeMobo", nome);
 	localStorage.setItem("prezzoMobo", prezzo);
+	alert("Articolo salvato");
 }
 
 // video
@@ -173,4 +175,5 @@ function save3() {
 	var prezzo = prodotto.dataset.prezzo;
 	localStorage.setItem("nomeVideo", nome);
 	localStorage.setItem("prezzoVideo", prezzo);
+	alert("Articolo salvato");
 }
