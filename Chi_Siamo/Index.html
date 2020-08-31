@@ -2,8 +2,8 @@
 <html lang="it" >
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css">
-	<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 	<link rel="stylesheet" href="css/master.css" type="text/css">
 	<script src="js/master.js"></script>
 	<title>Chi Siamo</title>
@@ -38,7 +38,7 @@
 	</header>
 	<div id="main">
 		<h1>CHI SIAMO</h1>
-		<p>
+		<p style="border: 3px solid darkred; border-radius: 5px; padding: 5px;">
 			TUTTOGAMING e' un'azienda molto specializzata nel settore dell'informatica, con oltre 15 anni d'esperienza.
 			La nostra missione e' aiutarti nel realizzare il miglior gaming pc di sempre! Chiunque può farsi da se' il
 			proprio personal computer anche standosene seduti a casa.
@@ -53,6 +53,7 @@
 				</p>
 			</div>
 		</div>
+		<hr>
 		<div class="welcome">
 			<img src="img/spedizione.jpeg" style="margin: 0px; height: 90%; width: 25%;">
 			<div class="message">
@@ -63,6 +64,7 @@
 				</p>
 			</div>
 		</div>
+		<hr>
 		<div class="welcome">
 			<img src="img/sede.jpg" style="margin: 0px; height: 90%; width: 25%;">
 			<div class="message">
@@ -74,6 +76,7 @@
 			</div>
 		</div>
 		<div id="map">
+			<h3>DOVE SIAMO</h3>
 			<div id="mymap"></div>
 			<input type="button" value="Trovami" onclick="trova()" >
 		</div>
