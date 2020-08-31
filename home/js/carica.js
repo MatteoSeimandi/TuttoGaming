@@ -3,7 +3,7 @@ function carica() {
 	var percorso = localStorage.getItem("img");
 
 	if (percorso == null) {
-		profile.src = "../../img/default.png";
+		profile.src = "../img/default.png";
 	} else {
 		profile.src = percorso;
 	}
