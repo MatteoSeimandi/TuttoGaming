@@ -93,6 +93,7 @@ function save() {
 	var prezzo = prodotto.dataset.prezzo;
 	localStorage.setItem("nomeRam", nome);
 	localStorage.setItem("prezzoRam", prezzo);
+	alert("Articolo salvato");
 }
 
 // ssd
@@ -124,7 +125,6 @@ function info2() {
 	var nome = prodotto.dataset.nome;
 	var prezzo = prodotto.dataset.prezzo;
 	alert( 'Nome: ' + nome + '\n' + 'Prezzo: €' + prezzo );
-
 }
 
 function save2() {
@@ -133,6 +133,7 @@ function save2() {
 	var prezzo = prodotto.dataset.prezzo;
 	localStorage.setItem("nomeSSD", nome);
 	localStorage.setItem("prezzoSSD", prezzo);
+	alert("Articolo salvato");
 }
 
 // case
@@ -173,4 +174,5 @@ function save3() {
 	var prezzo = prodotto.dataset.prezzo;
 	localStorage.setItem("nomeCase", nome);
 	localStorage.setItem("prezzoCase", prezzo);
+	alert("Articolo salvato");
 }
